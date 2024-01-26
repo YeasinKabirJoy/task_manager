@@ -1,0 +1,53 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<div class="row">
+
+{% if images %}
+<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+   {% for image in images %}
+       {% if forloop.first %}
+            <div class="carousel-item active">
+                <img src="{{ image.image.url }}" height="300px" width="280px" class="d-block w-100" alt="...">
+            </div>
+       {% else %}
+            <div class="carousel-item">
+                <img src="{{ image.image.url }}"  height="300px" width="280px" class="d-block w-100" alt="...">
+            </div>
+       {% endif %}
+
+   {% endfor %}
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+{% endif %}
+
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">{{ task.title}}</h5>
+    <p class="card-text">{{ task.description }}</p>
+    <p class="card-text">Priority: {{ task.priority }}</p>
+    <p class="card-text">Due Date: {{ task.due_date }}</p>
+    <p class="card-text">Created: {{ task.created_at }}</p>
+    <p class="card-text">Created By: {{ task.user.username }}</p>
+    <a href="{% url 'update-task' task.id %}" class="btn btn-primary">Update</a>
+    <a href="{% url 'delete-task' task.id %}" class="btn btn-danger">Delete</a>
+  </div>
+</div>
+
+
+
+
+{% endblock content %}

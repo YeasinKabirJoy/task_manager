@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+ <form method="POST" action="{% url 'delete-task' task.id %}">
+ {% csrf_token %}
+ <div class="card">
+  <h5 class="card-header">Warning!!!</h5>
+  <div class="card-body">
+    <h5 class="card-title">Are you sure to delete task</h5>
+    <p class="card-text">{{ task.title }}?</p>
+      <input class="btn btn-danger" type="submit" value="Confirm" >
+  </div>
+</div>
+
+ </form>
+
+
+{% endblock content %}
