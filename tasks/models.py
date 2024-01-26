@@ -23,6 +23,9 @@ class Task(models.Model):
     id = models.UUIDField(default=uuid.uuid4, unique=True, primary_key=True, editable=False)
     slug = models.SlugField(default="", blank=True, null=False, max_length=1000)
 
+    def __str__(self):
+        return self.title
+
     def save(self, *args, **kwargs):
         self.slug = slugify(self.title)
         super().save(*args, **kwargs)
