@@ -1,5 +1,5 @@
 
-# Task Management
+# Task Manager
 
 A task management app developed with Python-Django
 
