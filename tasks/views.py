@@ -64,7 +64,12 @@ class AllTasks(View):
 
         if request.GET.get('search-text'):
             search_text = request.GET.get('search-text')
+
         tasks = Task.objects.all().filter(title__contains=search_text)
+
+        if request.GET.get('filter_text'):
+            filter_text = request.GET.get('filter_text')
+            tasks = tasks.order_by(filter_text)
         context = {
             'tasks': tasks
         }

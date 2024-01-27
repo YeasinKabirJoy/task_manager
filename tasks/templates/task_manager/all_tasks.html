@@ -34,10 +34,10 @@
 <div class="col-lg-2">
 <p>Filters</p>
     <ul>
-        <li>Date</li>
-        <li>Date</li>
-        <li>Date</li>
-        <li>Date</li>
+        <li><a href="{% url 'all-task' %}?filter_text=due_date">Due Date</a></li>
+        <li><a href="{% url 'all-task' %}?filter_text=created_at">Creation Date</a></li>
+        <li><a href="{% url 'all-task' %}?filter_text=priority">Priority</a></li>
+        <li><a href="{% url 'all-task' %}?filter_text=is_complete">Completed</a></li>
     </ul>
 </div>
 </div>
