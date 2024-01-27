@@ -1,0 +1,94 @@
+[
+    {
+        "title": "Implement Two-Factor Authentication",
+        "description": "Strengthen the application's security by integrating two-factor authentication (2FA) for user accounts. Implement a robust and user-friendly 2FA mechanism, considering options such as OTP, authentication apps, or other industry-standard approaches. Conduct thorough testing to ensure the security measures are effective.",
+        "due_date": "2024-01-27",
+        "priority": "high",
+        "is_complete": true,
+        "created_at": "2024-01-27T15:35:14.048849+06:00",
+        "updated_at": "2024-01-27T15:35:14.048849+06:00",
+        "id": "913265e7-bbb0-49b8-89e0-e7a786d46c1b",
+        "slug": "implement-two-factor-authentication",
+        "user_id": 8
+    },
+    {
+        "title": "Implement User Authentication and Authorization System",
+        "description": "Enhance the ERP app by implementing a robust user authentication and authorization system. The goal is to ensure secure access to the application and its features, allowing only authorized users to perform specific actions.",
+        "due_date": "2024-02-14",
+        "priority": "high",
+        "is_complete": false,
+        "created_at": "2024-01-27T15:30:49.326997+06:00",
+        "updated_at": "2024-01-27T15:37:56.960771+06:00",
+        "id": "8b27ebb1-77a1-42b8-a723-9c699c76fb17",
+        "slug": "implement-user-authentication-and-authorization-system",
+        "user_id": 1
+    },
+    {
+        "title": "Bug Fix: Resolve Data Synchronization Issue",
+        "description": "Investigate and address an identified issue with data synchronization between the server and client applications. Debug and resolve inconsistencies in data retrieval and updating mechanisms to ensure real-time accuracy and eliminate discrepancies in the system.",
+        "due_date": "2024-01-31",
+        "priority": "medium",
+        "is_complete": false,
+        "created_at": "2024-01-27T15:33:21.540064+06:00",
+        "updated_at": "2024-01-27T15:38:40.786095+06:00",
+        "id": "578fc793-36fc-44e2-8fab-dd80c9a115d6",
+        "slug": "bug-fix-resolve-data-synchronization-issue",
+        "user_id": 1
+    }
+]
+
+
+[
+    {
+        "id": 1,
+        "password": "pbkdf2_sha256$720000$tFCetCobuVQAvTfjQiM462$GN9vhKhs4ak5ggYOAdrZXlHwyNC/VwMfuxBabqbQDeY=",
+        "last_login": "2024-01-27T15:05:44.720618+06:00",
+        "is_superuser": true,
+        "username": "admin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2024-01-26T20:30:08.309405+06:00"
+    },
+    {
+        "id": 6,
+        "password": "pbkdf2_sha256$720000$SjQ6p8n7IeaFpbvJOglNVf$MYWUnclgsfkSsBx7cXfHMgc1RmHp8A5JU6fGAA7pxko=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "user1",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-01-27T15:13:31+06:00"
+    },
+    {
+        "id": 7,
+        "password": "pbkdf2_sha256$720000$Nbw99RysTzqnbLD7CSZxd8$8K3/V1oDlAyG6hW//4Rz1wzMqBGWQy7hOl6gaf2VYxE=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "user2",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-01-27T15:14:05+06:00"
+    },
+    {
+        "id": 8,
+        "password": "pbkdf2_sha256$720000$pUk1fSjsyL2czTTdclr6ag$cYNL9y34yho4yhkdmIYokWMLRr8FNzPMSCiHORPZNkg=",
+        "last_login": null,
+        "is_superuser": false,
+        "username": "user3",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": false,
+        "is_active": true,
+        "date_joined": "2024-01-27T15:14:16+06:00"
+    }
+]
